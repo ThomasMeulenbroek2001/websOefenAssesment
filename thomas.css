@@ -16,7 +16,6 @@ main
     height: 60vh;
     width: 45%;
     overflow: hidden;
-    background-color: black;
 }
 
 .smallTextContainer
@@ -53,6 +52,41 @@ img:hover
     opacity: 1;
 }
 
+#sectionTop
+{
+    height: 30vh;
+    width: 100%;
+    background-image: url("afbeeldingen/amsterdam.jpg");
+    background-repeat: none;
+    background-position: center;
+}
+
+.rowItem, .bigImg, .row2Item
+{
+    background-color: black;
+}
+
+.rowItem, .row2Item
+{
+    overflow: hidden;
+}
+
+.rowItem
+{
+    width: 24%;
+}
+
+.row2Item
+{
+    width: 12%;
+}
+
+#bol > .container
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 @media only screen and (orientation: portrait)
 {
     .bigImg
@@ -70,5 +104,15 @@ img:hover
     #homePage .container:nth-child(even)
     {
         display: none;
+    }
+
+    .rowItem
+    {
+        width: 48%;
+    }
+
+    .row2Item
+    {
+        width: 33%;
     }
 }
