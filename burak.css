@@ -17,6 +17,20 @@ article{
     margin-top: 3%;
 }
 
+#split {
+    display: flex;
+    justify-content: left;
+}
+
+.container #left{
+    width:50%;
+    background-color: black;
+}
+
+.container #right{
+    width: 50%;
+    background-color: white;
+}
 
 img{
     width:100%;
