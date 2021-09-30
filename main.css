@@ -65,7 +65,7 @@ h5{
 }
 
 /* Puntjes voor de lijst weghalen */
-.navMain ul
+.navMain ul, .mobileMenu, .mobileMenu ul
 {
     list-style: none;
 }
@@ -131,6 +131,33 @@ footer
     background-color: #444444;
     width: 100%;
     height: 3vh;
+}
+
+.navMobile>ul
+{
+    display: none;
+}
+
+.navMobile > i:hover + .mobileMenu
+{
+    display: block;
+}
+
+.mobileMenu a, .mobileMenu li
+{
+    color: white;
+    text-decoration: none;
+}
+
+.mobileMenu .dropdown
+{
+    padding: 0px;
+}
+
+.mobileMenu .dropdown ul
+{
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
 @media only screen and (orientation: portrait)
