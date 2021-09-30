@@ -59,11 +59,12 @@ img{
 }
 
 /* vraag voor assessment dit wil niet mee werken*/ 
-@media only screen and (max-width: 500px) {
+@media only screen and (orientation: portrait) {
     article{
         width: 100%;
     }
     .container row{
         display: block;
+        margin-right: 10%;
     }
   }
