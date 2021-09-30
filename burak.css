@@ -59,7 +59,7 @@ img{
 }
 
 /* vraag voor assessment dit wil niet mee werken*/ 
-@media only screen and (orientation: portrait) {
+@media screen and (max-width: 600px) {
     article{
         width: 100%;
     }
