@@ -1,3 +1,5 @@
+/* css van pagina 3, 4, 5 */ 
+
 .container row , #BookFace{
     display: flex;
 }
@@ -54,12 +56,14 @@ article{
 
 img{
     width:100%;
-
 }
 
+/* vraag voor assessment dit wil niet mee werken*/ 
 @media only screen and (max-width: 500px) {
-    .container row{
-        display: flex;
+    article{
         width: 100%;
+    }
+    .container row{
+        display: block;
     }
   }
