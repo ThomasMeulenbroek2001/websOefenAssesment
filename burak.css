@@ -1,0 +1,22 @@
+.left{
+    width: 70%;
+}
+
+.right{
+    width: 30%;
+    display: flex;
+}
+.max, .checo{
+    width: 50%;
+
+}
+
+.driverinfo ul{
+    list-style: url('./afbeeldingen/');
+    width: 1%;
+    height: 1%;
+}
+.max > img, .checo > img{
+    width: 95%;
+
+}
