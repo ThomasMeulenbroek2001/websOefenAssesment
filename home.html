@@ -4,283 +4,602 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="thomas.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <title>homePage</title>
+    <link rel="stylesheet" href="headerFooter.css">
+    <link rel="stylesheet" href="mainNieuw.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <title>Home</title>
 </head>
 <body>
     <header>
-        <nav class="navMain">
+        <a href="home.html"><img src="afbeeldingen/f1_logo.svg" alt="f1_logo"></a>
+        <nav id="pcNav">
             <ul>
-                <li class="menu-item"><a href="home.html">Home</a></li>
-                <li class="menu-item"><a href="pagina2.html">Pagina 2</a></li>
-                <li class="menu-item"><a href="pagina3.html">Pagina 3</a></li>
-                <li class="menu-item dropdown">dropdown
-                    <ul class="subMenu firstSub">
-                        <li class="menu-item"><a href="pagina4.html">Pagina 4</a></li>
-                        <li class="menu-item dropdown">dropdown
-                            <ul class="subMenu secondSub">
-                                <li class="menu-item"><a href="pagina5.html">Pagina 5</a></li>
+                <li><a href="afgelopenRace.html">Afgelopen race</a></li>
+                <li class="dropDown">
+                    <a href="#">Teams</a>
+                    <ul class="subMenu sub1">
+                        <li class="dropDown">
+                            <a href="#">Alfa Romeo Racing</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Kimi Raikkonen</a>
+                                </li>
+                                <li>
+                                    <a href="#">Antonio Giovinazzi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">AlphaTauri</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Pierre Gasly</a>
+                                </li>
+                                <li>
+                                    <a href="#">Yuki Tsunoda</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">Alpine</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Fernando Alonso</a>
+                                </li>
+                                <li>
+                                    <a href="#">Esteban Ocon</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">Aston Martin</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Sebastian Vettel</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lance Stroll</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">Ferrari</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Charles Leclerc</a>
+                                </li>
+                                <li>
+                                    <a href="#">Carlos Sainz</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">Haas</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Mick Schumacher</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nikita Mazepin</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">McLaren</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Daniel Ricciardo</a>
+                                </li>
+                                <li>
+                                    <a href="#">Lando Norris</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">Mercedes</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Lewis Hamilton</a>
+                                </li>
+                                <li>
+                                    <a href="#">Valtteri Bottas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">Red Bull</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">Max Verstappen</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sergio Perez</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropDown">
+                            <a href="#">Williams</a>
+                            <ul class="subMenu sub2">
+                                <li>
+                                    <a href="#">George Russell</a>
+                                </li>
+                                <li>
+                                    <a href="#">Nicholas Latifi</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
+                <li><a href="#">Nieuws</a></li>
             </ul>
         </nav>
-        <nav class="navMobile">
+        <nav id="mobileNav">
             <section class="menu-wrap">
-                <input type="checkbox" class="toggler">
+                <input type="checkbox" class="menuToggle">
                 <section class="hamburger"><section></section></section>
                 <section class="mobileMenu">
-                    <section>
-                        <section>
-                            <ul>
-                                <li class="menu-item"><a href="home.html">Home</a></li>
-                                <li class="menu-item"><a href="pagina2.html">Pagina 2</a></li>
-                                <li class="menu-item"><a href="pagina3.html">Pagina 3</a></li>
-                                <li class="menu-item"><a href="pagina4.html">Pagina 4</a></li>
-                                <li class="menu-item"><a href="pagina5.html">Pagina 5</a></li>
+                    <ul>
+                        <li><a href="afgelopenRace.html">Afgelopen race</a></li>
+                        <li class="mDropDown">
+                            <a href="#">Teams</a>
+                            <input type="checkbox" class="subMenuToggle">
+                            <section class="arrowDown"><section></section></section>
+                            <ul class="mSubMenu mSub1">
+                                <li class="mDropDown">
+                                    <a href="#">Alfa Romeo Racing</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Kimi Raikkonen</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Antonio Giovinazzi</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">AlphaTauri</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Pierre Gasly</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Yuki Tsunoda</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">Alpine</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Fernando Alonso</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Esteban Ocon</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">Aston Martin</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Sebastian Vettel</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Lance Stroll</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">Ferrari</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Charles Leclerc</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Carlos Sainz</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">Haas</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Mick Schumacher</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Nikita Mazepin</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">McLaren</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Daniel Ricciardo</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Lando Norris</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">Mercedes</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Lewis Hamilton</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Valtteri Bottas</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">Red Bull</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">Max Verstappen</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sergio Perez</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mDropDown">
+                                    <a href="#">Williams</a>
+                                    <input type="checkbox" class="subMenuToggle">
+                                    <section class="arrowDown"><section></section></section>
+                                    <ul class="mSubMenu mSub2">
+                                        <li>
+                                            <a href="#">George Russell</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Nicholas Latifi</a>
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </section>
-                    </section>
+                        </li>
+                        <li><a href="#">Nieuws</a></li>
+                    </ul>
                 </section>
             </section>
         </nav>
     </header>
-    <main id="homePage">
-        <section class="container">
-            <section class="bigImg">
-                <img src="afbeeldingen/w95Achtergrond.jpg">
+    <main>
+        <section class="headerSection">
+            <section>
+                <h1>
+                    Wolff legt uit waarom Mercedes de 'superagressieve' strategie van Red Bull niet aankon
+                </h1>
             </section>
-            <section class="smallTextContainer">
-                <section class="smallText">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Maecenas dapibus lobortis elit in porta..
-                    </p>
+            <section class="container">
+                <a href="#" class="btn">Lees verder</a>
+                <a href="#" class="btn">Meer nieuws</a>
+            </section>
+            <a href="#sec2" class="arrow"><img src="afbeeldingen/arrowDown.png" alt="arrowDown"></a>
+        </section>
+        <section class="container" id="sec2">
+            <section id="drivers">
+                <h2>Rijders kampioenschap</h2>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">1</p>
+                        <p class="firstname">Max</p> 
+                        <p class="lastname">Verstappen</p>
+                        <p class="team">Red bull racing</p>
+                    </section>
+                    <p class="points">287,5 pts</p>
                 </section>
-                <section class="smallText">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Maecenas dapibus lobortis elit in porta. 
-                    </p>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">2</p>
+                        <p class="firstname">Lewis</p> 
+                        <p class="lastname">Hamilton</p>
+                        <p class="team">Mercedes</p>
+                    </section>
+                    <p class="points">275,5 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">3</p>
+                        <p class="firstname">Valtteri</p> 
+                        <p class="lastname">Bottas</p>
+                        <p class="team">Mercedes</p>
+                    </section>
+                    <p class="points">185 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">4</p>
+                        <p class="firstname">Sergio</p> 
+                        <p class="lastname">Perez</p>
+                        <p class="team">Red bull racing</p>
+                    </section>
+                    <p class="points">150 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">5</p>
+                        <p class="firstname">Lando</p> 
+                        <p class="lastname">Norris</p>
+                        <p class="team">McLaren</p>
+                    </section>
+                    <p class="points">149 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">6</p>
+                        <p class="firstname">Charles</p> 
+                        <p class="lastname">Leclerc</p>
+                        <p class="team">Ferrari</p>
+                    </section>
+                    <p class="points">128 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">7</p>
+                        <p class="firstname">Carlos</p> 
+                        <p class="lastname">Sainz</p>
+                        <p class="team">Ferrari</p>
+                    </section>
+                    <p class="points">122,5 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">8</p>
+                        <p class="firstname">Daniel</p> 
+                        <p class="lastname">Ricciardo</p>
+                        <p class="team">McLaren</p>
+                    </section>
+                    <p class="points">105 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">9</p>
+                        <p class="firstname">Pierre</p> 
+                        <p class="lastname">Gasly</p>
+                        <p class="team">AlphaTauri</p>
+                    </section>
+                    <p class="points">74 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">10</p>
+                        <p class="firstname">Fernando</p> 
+                        <p class="lastname">Alonso</p>
+                        <p class="team">Alpine</p>
+                    </section>
+                    <p class="points">58 pts</p>
+                </section>
+            </section>
+            <section id="constructors">
+                <h2>Constructeur kampioenschap</h2>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">1</p>
+                        <p class="consturctor">Mercedes</p>
+                        <p class="drivers">Hamilton / Bottas</p>
+                    </section>
+                    <p class="points">460.5 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">2</p>
+                        <p class="consturctor">Red bull racing</p>
+                        <p class="drivers">Verstappen / Perez</p>
+                    </section>
+                    <p class="points">137.5 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">3</p>
+                        <p class="consturctor">McLaren</p>
+                        <p class="drivers">Ricciardo / Norris</p>
+                    </section>
+                    <p class="points">254 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">4</p>
+                        <p class="consturctor">Ferrari</p>
+                        <p class="drivers">Leclerc / Sainz</p>
+                    </section>
+                    <p class="points">250.5 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">5</p>
+                        <p class="consturctor">Alpine</p>
+                        <p class="drivers">Alonso / Ocon</p>
+                    </section>
+                    <p class="points">104 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">6</p>
+                        <p class="consturctor">AlphaTauri</p>
+                        <p class="drivers">Gasly / Tsunoda</p>
+                    </section>
+                    <p class="points">94 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">7</p>
+                        <p class="consturctor">Aston Martin</p>
+                        <p class="drivers">Vettel / Stroll</p>
+                    </section>
+                    <p class="points">62 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">8</p>
+                        <p class="consturctor">Williams</p>
+                        <p class="drivers">Russell / Latifi</p>
+                    </section>
+                    <p class="points">23 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">9</p>
+                        <p class="consturctor">Alfa Romeo</p>
+                        <p class="drivers">Raikkonen / Giovinazzi</p>
+                    </section>
+                    <p class="points">7 pts</p>
+                </section>
+                <section class="container standing">
+                    <section class="container">
+                        <p class="number">10</p>
+                        <p class="consturctor">Haas</p>
+                        <p class="drivers">Schumacher / Mazepin</p>
+                    </section>
+                    <p class="points">0 pts</p>
                 </section>
             </section>
         </section>
-        <section class="container">
-            <section class="smallTextContainer">
-                <section class="smallText">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Maecenas dapibus lobortis elit in porta. 
-                    </p>
+        <section class="calendar">
+            <h1>Kalender</h1>
+            <section class="container">
+                <section class="calendarItem">
+                    <img src="afbeeldingen/turkije.png" alt="turkije">
+                    <h2>Turkije</h2>
+                    <a href="#" class="btn">Lees meer</a>
                 </section>
-                <section class="smallText">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Maecenas dapibus lobortis elit in porta. 
-                    </p>
+                <section class="calendarItem">
+                    <img src="afbeeldingen/vs.jpg" alt="vs">
+                    <h2>Verenigde staten</h2>
+                    <a href="afgelopenRace.html" class="btn">Lees meer</a>
                 </section>
-            </section>
-            <section class="bigImg">
-                <img src="afbeeldingen/w95Achtergrond.jpg">
-            </section>
-        </section>
-        <section class="container">
-            <section class="bigImg">
-                <img src="afbeeldingen/w95Achtergrond.jpg">
-            </section>
-            <section class="smallTextContainer">
-                <section class="smallText">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Maecenas dapibus lobortis elit in porta. 
-                    </p>
+                <section class="nextRace">
+                    <img src="afbeeldingen/mexico.jpg" alt="mexico">
+                    <h2>Mexico</h2>
+                    <section class="container">
+                        <section class="practice">
+                            <section class="container">
+                                <p class="activity">Vrije trainig 1</p>
+                                <p class="day">vr</p>
+                                <p class="times">18:30 - 19:30</p>
+                            </section>
+                            <section class="container">
+                                <p class="activity">Vrije trainig 2</p>
+                                <p class="day">vr</p>
+                                <p class="times">22:00 - 23:00</p>
+                            </section>
+                            <section class="container">
+                                <p class="activity">Vrije trainig 3</p>
+                                <p class="day">za</p>
+                                <p class="times">18:00 - 19:00</p>
+                            </section>
+                        </section>
+                        <section class="race">
+                            <section class="container">
+                                <p class="activity">Kwalificatie</p>
+                                <p class="day">za</p>
+                                <p class="times">21:00 - 22:00</p>
+                            </section>
+                            <section class="container">
+                                <p class="activity">Race</p>
+                                <p class="day">zo</p>
+                                <p class="times">20:00</p>
+                            </section>
+                        </section>
+                    </section>
+                    <a href="#" class="btn">Lees meer</a>
                 </section>
-                <section class="smallText">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Maecenas dapibus lobortis elit in porta. 
-                    </p>
+                <section class="calendarItem">
+                    <img src="afbeeldingen/brazilie.jpg" alt="brazilie">
+                    <h2>Brazilië</h2>
+                    <a href="#" class="btn">Lees meer</a>
+                </section>
+                <section class="calendarItem">
+                    <img src="afbeeldingen/qatar.jpg" alt="qatar">
+                    <h2>Qatar</h2>
+                    <a href="#" class="btn">Lees meer</a>
                 </section>
             </section>
         </section>
-        <section class="container">
-            <section class="smallTextContainer">
-                <section class="smallText">
+        <section class="news">
+            <h1>Nieuws</h1>
+            <section class="container">
+                <article class="newsItem">
+                    <section>
+                        <img src="afbeeldingen/redBullMercedes.jpeg" alt="redBullMercedes">
+                    </section>
+                    <h2>Titel</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Maecenas dapibus lobortis elit in porta. 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                        magna aliquyam erat, sed diam voluptua. At vero eos et 
+                        accusam et justo duo dolores et ea rebum. Stet clita 
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum 
+                        dolor
                     </p>
-                </section>
-                <section class="smallText">
+                </article>
+                <article class="newsItem">
+                    <section>
+                        <img src="afbeeldingen/redBullMercedes.jpeg" alt="redBullMercedes">
+                    </section>
+                    <h2>Titel</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Etiam maximus ultrices justo, quis aliquam urna. 
-                        Nullam venenatis turpis vitae metus porta convallis. 
-                        Pellentesque vel congue enim. Quisque sollicitudin 
-                        pharetra blandit. Maecenas dapibus lobortis elit in porta. 
-                        Aenean aliquet, nulla quis accumsan gravida, ante lectus 
-                        pulvinar metus, et lobortis velit est ut eros. 
-                        Nunc et massa libero. 
-                        Suspendisse tempor lorem et efficitur tincidunt. 
-                        Praesent et nulla ut risus pharetra gravida id sed erat.
-                        Maecenas dapibus lobortis elit in porta. 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                        magna aliquyam erat, sed diam voluptua. At vero eos et 
+                        accusam et justo duo dolores et ea rebum. Stet clita 
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum 
+                        dolor
                     </p>
-                </section>
-            </section>
-            <section class="bigImg">
-                <img src="afbeeldingen/w95Achtergrond.jpg">
+                </article>
+                <article class="newsItem">
+                    <section>
+                        <img src="afbeeldingen/redBullMercedes.jpeg" alt="redBullMercedes">
+                    </section>
+                    <h2>Titel</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                        magna aliquyam erat, sed diam voluptua. At vero eos et 
+                        accusam et justo duo dolores et ea rebum. Stet clita 
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum 
+                        dolor
+                    </p>
+                </article>
+                <article class="newsItem">
+                    <section>
+                        <img src="afbeeldingen/redBullMercedes.jpeg" alt="redBullMercedes">
+                    </section>
+                    <h2>Titel</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore 
+                        magna aliquyam erat, sed diam voluptua. At vero eos et 
+                        accusam et justo duo dolores et ea rebum. Stet clita 
+                        kasd gubergren, no sea takimata sanctus est Lorem ipsum 
+                        dolor
+                    </p>
+                </article>
             </section>
         </section>
     </main>
     <footer>
-        <p>Author: T Meulenbroek , B Senturk</p>
-        <p><a href="mailto:nomail@mailmail.mail.com">nomail@mailmail.mail.com</a></p>        
+        <p>Gemaakt door Burak en Thomas</p>
     </footer>
 </body>
 </html>
