@@ -1,0 +1,131 @@
+@media only screen and (min-width: 480px)
+{
+    #mobileNav
+    {
+        display: none;
+    }
+
+    #pcNav
+    {
+        display: block;
+    }
+
+    header > a 
+    {
+        width: 10%;
+    }
+
+    .headerSection > section
+    {
+        width: 40%;
+    }
+
+    .headerSection h1
+    {
+        font-size: 3em;
+    }
+
+    .headerSection .btn:last-child
+    {
+        display: block;
+    }
+
+    .headerSection .btn
+    {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    #sec2 > section
+    {
+        width: calc(50% - 40px);
+        margin: 100px 20px;
+    }
+
+    .team, .drivers
+    {
+        display: block;
+    }
+
+    .firstname
+    {
+        display: block;
+    }
+
+    #constructors
+    {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1800px)
+{
+    .calendarItem
+    {
+        display: block;
+    }
+
+    .nextRace
+    {
+        width: 32%;
+        margin-left: 0px;
+    }
+
+    .nextRace .practice, .nextRace .race
+    {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1100px)
+{
+    .nextRace .practice, .nextRace .race
+    {
+        width: calc(50% - 10px);
+    }
+
+    .newsItem
+    {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1800px)
+{
+    .calendarItem
+    {
+        display: block;
+    }
+
+    .nextRace
+    {
+        width: 32%;
+        margin-left: 0px;
+    }
+
+    .nextRace .practice, .nextRace .race
+    {
+        width: calc(50% - 10px);
+    }
+}
+
+@media only screen and (min-width: 660px)
+{
+    .newsItem:nth-child(3), .newsItem:nth-child(4)
+    {
+        display: block;
+    }
+
+    .newsItem
+    {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1100px)
+{
+    .newsItem
+    {
+        width: 20%;
+    }
+}
