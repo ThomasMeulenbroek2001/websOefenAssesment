@@ -1,0 +1,46 @@
+.prTimes
+{
+    background-color: #F3F3F3;
+    text-align: center;
+    padding: 50px;
+}
+
+.prTimes img
+{
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.prTimes > h1
+{
+    margin-bottom: 50px;
+}
+
+.prTimes > .container .container
+{
+    background-color: white;
+    align-items: center;
+    padding: 15px 40px;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.prPractice, .prRace
+{
+    width: 33%;
+}
+
+.prPractice .number
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+}
+
+.prDate p:last-child
+{
+    padding: 8px 3px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
