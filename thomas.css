@@ -57,6 +57,130 @@
     margin-bottom: 20px;
 }
 
+.prCircuit, .prUitslag
+{
+    padding: 50px 30px 0px 30px;
+}
+
+.prCircuit > h1, .prAustin h1, .prUitslag h1
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.prCircuit > .container
+{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prCircuit img
+{
+    width: 100%;
+}
+
+.prStats
+{
+    width: 30%;
+    display: none;
+}
+
+.prStats > .statItem
+{
+    width: calc(100% - 35px);
+}
+
+.statItem
+{
+    width: calc(50% - 35px);
+    margin: 0px 10px 10px 10px;
+    box-shadow: 0px 0px 6px #00000047;
+    padding: 25px 0px 25px 15px;
+}
+
+.statItem > p
+{
+    margin-bottom: 20px;
+}
+
+.statItem h2
+{
+    margin-right: 10px;
+}
+
+.statItem > .container
+{
+    align-items: center;
+}
+
+.prAustin .container section
+{
+    width: calc(50% - 45px);
+}
+
+.prAustin .container section:first-child
+{
+    margin-right: 90px;
+}
+
+.prAustin h2
+{
+    margin-bottom: 20px;
+}
+
+.prAustin p
+{
+    margin-bottom: 30px;
+}
+
+.prAustin
+{
+    display: none;
+}
+
+.tblResult
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tblResult td
+{
+    padding: 15px 0px;
+}
+
+.tblResult th
+{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.pos, .raceNr, .laps, .prPoints, .time
+{
+    width: 10%;
+}
+
+.raceNr, .car, .laps, .prPoints
+{
+    display: none;
+}
+
+.driver, .car
+{
+    width: 25%;
+}
+
+.tblResult > tbody tr:nth-child(odd)
+{
+    background-color: #F3F3F3;
+}
+
+.prUitslag
+{
+    margin-bottom: 50px;
+}
+
 @media only screen and (min-width: 870px)
 {
     .prPractice, .prRace
@@ -68,6 +192,21 @@
     .prTimes > .container .container
     {
         padding: 15px 40px;
+    }
+
+    .prAustin
+    {
+        display: block;
+    }
+
+    .raceNr, .car, .laps, .prPoints
+    {
+        display: revert;
+    }
+
+    .prCircuit, .prAustin, .prUitslag
+    {
+        padding: 50px 100px 0px 100px;
     }
 }
 
@@ -82,5 +221,19 @@
     {
         width: calc(30% - 40px);
         margin-right: 40px;
+    }
+}
+
+@media only screen and (min-width: 1300px)
+{
+    .prStats
+    {
+        display: block;
+        
+    }
+
+    .prCircuit img
+    {
+        width: 50%;
     }
 }
