@@ -1,28 +1,33 @@
+/* Video embed bovenkant pagina */
 .video{
     margin: 1%;
     height: 630px;
     width: 95.5%;
 }
+/* container links van de teams pagina */
 .left{
     height: 100%;
     width: 70%;
-    display: block;
+    text-align: center;
 }
 
+/* container rechts van de teams pagina */
 .right{
     margin-top: 1%;
     width: 25%;
-    display: flex;
+    text-align: center;
 }
+/* containers van beide bestuurders */ 
 .max, .checo{
     width: 50%;
 
 }
 
-.driverinfo ul{
-    list-style : none;
+/* dit stukje is van de naam en nummer van bestuurders met vlag */ 
+.drivertitle{
+    padding-left: 3%;
+    width: 97%;
 }
-
 .drivertitle h1{
     color: red;
 }
@@ -31,15 +36,13 @@
     color: grey;
 }
 
+/* dit stukje gaat over het deel van de statistieken */
 .racingstats{
     margin-left: auto;
     margin-right: auto;
 }
 
-.text{
-    text-align: center;
-
-}
+/* dit zijn de fotos van max en checo */ 
 
 .max img, .checo img{
     width: 95%;
@@ -48,11 +51,13 @@
 
 
 }
+
+/* dit gaat over de containers waar max en checo in staan */
 .driverlineup{
     margin:1%;
-    align-items: baseline;
 }
 
+/* dit schaalt de image zodat je niet de volledige image ziet*/ 
 .imgcontainer{
 
     height: 30vh;
@@ -60,66 +65,51 @@
     overflow: hidden;
 }
 
-.imgcontainer :hover{
-    transition-timing-function: ease;
-    transition-delay: 100ms;
-    opacity: 1;
-    animation: filters 2s 1;
-}
-
-
-@keyframes filters{
-    from{filter: grayscale(100%);}
-    to {filter:grayscale(0%) }
-    from{transform: rotateY(0deg);}
-    to {transform: rotateY(180deg);}
-    from{border: 1px solid;}
-    to{border:1px solid;}
-    from{border-color: red;}
-    to{border-color: white;}
-
-}
-
-
 .vlagimg img{
     width: 50px;
-    display: flex;
     margin-left: 1vw;
     margin-top: 0.5vh;
     opacity: 1;
     filter: grayscale(0%);
 }
 
+/* coureur statistieken tabel */
 th{
     color: #fcd700;
     font-weight: bolder;
 }
 
+/* dit is de css voor de volledige pagina, hiermee is de achtergrond donkerblauw en de text wit */
 .rbpage{
     background-color:#00162b;
     color: white;
+    width: 100%;
 }
 
-.redbull{
-    text-align: center;
-}
-
+/* dit zorgt er voor dat de motto niet zichtbaar is op PC */
 .motto{
    display: none;
     
 }
+
+/* dit is voor de rechter kant waar er info is over redbull */
 .secondrb{
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
 
+/* stuk tekst over de coureurs */
 .driverbiography{
     margin-top: 1vh;
     width: 90%;
-    padding-right: 100px;
 }
 
+/* rechter kant padding toegevoegd waar info staat over redbull */
+.redbull{
+    padding-left: 10%;
+}
 
+/* media queries voor team pagina mobiel */
 @media only screen and (max-width: 660px)
 {
     .left{
@@ -143,9 +133,15 @@ th{
     .motto{
        margin: 10px;        
     }
+    .driverbiography{
+        width: 80%;
+        padding: 10%;
+        text-align: center;
+    }
 
 }
 
+/* media queries voor team pagina tablet */
 @media only screen and (max-width: 1100px)
 {
     .left{
@@ -160,4 +156,32 @@ th{
         text-align : center;
     }
     
+    .vlagimg img{
+        width: 50px;
+        margin-left: 1vw;
+        margin-top: 0.5vh;
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+}
+
+/* animaties met hover */
+.imgcontainer :hover{
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+    opacity: 1;
+    animation: filters 2s 1;
+}
+
+/* keyframes voor de animaties */
+@keyframes filters{
+    from{filter: grayscale(100%);}
+    to {filter:grayscale(0%) }
+    from{transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+    from{border: 1px solid;}
+    to{border:1px solid;}
+    from{border-color: red;}
+    to{border-color: white;}
+
 }
