@@ -332,15 +332,15 @@ textarea
 
 form
 {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    height: 70vh;
+    margin: 0px auto 50px auto;
 }
 
 form .container section
 {
-    width: calc(50% - 20px);
-    padding: 0px 10px 0px 10px;
+    width: 100%;
+    padding: 0px;
 }
 
 form .btn
@@ -383,6 +383,12 @@ form .btn
         grid-template-columns: auto auto auto auto;
         padding: 0px 50px;
     }
+
+    form .container section
+    {
+        width: calc(50% - 20px);
+        padding: 0px 10px 0px 10px;
+    }
 }
 
 @media only screen and (min-width: 1800px)
@@ -418,6 +424,14 @@ form .btn
     }
 
     .prCircuit img
+    {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 660px)
+{
+    form
     {
         width: 50%;
     }
