@@ -24,20 +24,20 @@
 }
 
 /* dit stukje is van de naam en nummer van bestuurders met vlag */ 
-.drivertitle{
+.driverTitle{
     padding-left: 3%;
     width: 97%;
 }
-.drivertitle h1{
+.driverTitle h1{
     color: red;
 }
 
-.drivertitle h2{
+.driverTitle h2{
     color: grey;
 }
 
 /* dit stukje gaat over het deel van de statistieken */
-.racingstats{
+.racingStats{
     margin-left: auto;
     margin-right: auto;
 }
@@ -53,19 +53,19 @@
 }
 
 /* dit gaat over de containers waar max en checo in staan */
-.driverlineup{
+.driverLineup{
     margin:1%;
 }
 
 /* dit schaalt de image zodat je niet de volledige image ziet*/ 
-.imgcontainer{
+.imgContainer{
 
     height: 30vh;
     width: 100%;
     overflow: hidden;
 }
 
-.vlagimg img{
+.vlagImg img{
     width: 50px;
     margin-left: 1vw;
     margin-top: 0.5vh;
@@ -80,7 +80,7 @@ th{
 }
 
 /* dit is de css voor de volledige pagina, hiermee is de achtergrond donkerblauw en de text wit */
-.rbpage{
+.rbPage{
     background-color:#00162b;
     color: white;
     width: 100%;
@@ -93,13 +93,13 @@ th{
 }
 
 /* dit is voor de rechter kant waar er info is over redbull */
-.secondrb{
+.secondRb{
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
 
 /* stuk tekst over de coureurs */
-.driverbiography{
+.driverBiography{
     margin-top: 1vh;
     width: 90%;
 }
@@ -133,7 +133,7 @@ th{
     .motto{
        margin: 10px;        
     }
-    .driverbiography{
+    .driverBiography{
         width: 80%;
         padding: 10%;
         text-align: center;
@@ -156,7 +156,7 @@ th{
         text-align : center;
     }
     
-    .vlagimg img{
+    .vlagImg img{
         width: 50px;
         margin-left: 1vw;
         margin-top: 0.5vh;
@@ -166,7 +166,7 @@ th{
 }
 
 /* animaties met hover */
-.imgcontainer :hover{
+.imgContainer :hover{
     transition-timing-function: ease;
     transition-delay: 100ms;
     opacity: 1;
