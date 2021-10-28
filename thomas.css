@@ -20,7 +20,7 @@
 {
     background-color: white;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 20px;
     border-radius: 10px;
     justify-content: space-between;
     margin-bottom: 2px;
@@ -28,10 +28,10 @@
 
 .prPractice, .prRace
 {
-    width: 30%;
+    width: 100%;
 }
 
-.prPractice .number
+.prPractice .number, .prRace .number
 {
     margin-left: auto;
     margin-right: auto;
@@ -43,4 +43,382 @@
     padding: 8px 3px;
     background-color: #F5F5F5;
     border-radius: 5px;
+}
+
+.prDesc
+{
+    width: 40%;
+    text-align: left;
+    display: none;
+}
+
+.prDesc p
+{
+    margin-bottom: 20px;
+}
+
+.prCircuit, .prUitslag
+{
+    padding: 50px 30px 0px 30px;
+}
+
+.prCircuit > h1, .prAustin h1, .prUitslag h1
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.prCircuit > .container
+{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prCircuit img
+{
+    width: 100%;
+}
+
+.prStats
+{
+    width: 30%;
+    display: none;
+}
+
+.prStats > .statItem
+{
+    width: calc(100% - 35px);
+}
+
+.statItem
+{
+    width: calc(50% - 35px);
+    margin: 0px 10px 10px 10px;
+    box-shadow: 0px 0px 6px #00000047;
+    padding: 25px 0px 25px 15px;
+}
+
+.statItem > p
+{
+    margin-bottom: 20px;
+}
+
+.statItem h2
+{
+    margin-right: 10px;
+}
+
+.statItem > .container
+{
+    align-items: center;
+}
+
+.prAustin .container section
+{
+    width: calc(50% - 45px);
+}
+
+.prAustin .container section:first-child
+{
+    margin-right: 90px;
+}
+
+.prAustin h2
+{
+    margin-bottom: 20px;
+}
+
+.prAustin p
+{
+    margin-bottom: 30px;
+}
+
+.prAustin
+{
+    display: none;
+}
+
+.tblResult
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tblResult td
+{
+    padding: 15px 0px;
+}
+
+.tblResult th
+{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.pos, .raceNr, .laps, .prPoints, .time
+{
+    width: 10%;
+}
+
+.raceNr, .car, .laps, .prPoints
+{
+    display: none;
+}
+
+.driver, .car
+{
+    width: 25%;
+}
+
+.tblResult > tbody tr:nth-child(odd)
+{
+    background-color: #F3F3F3;
+}
+
+.prUitslag, .nArticles, .nMore
+{
+    margin-bottom: 50px;
+}
+
+.nArticles
+{
+    width: 100%;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+}
+
+.nArticles section
+{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nArticles section > img
+{
+    width: 100%;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.nMore
+{
+    width: calc(20% - 42px);
+    padding: 0px 20px;
+    border-left: 2px solid #38383F;
+    display: none;
+}
+
+.nArticles p
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin: 10px 20px 20px 20px;
+}
+
+.nArticles .btn
+{
+    display: inline-block;
+    margin-left: calc(50% - 57px);
+    margin-bottom: 20px;
+}
+
+.nArticles h2
+{
+    text-align: center;
+}
+
+.nArticles article
+{
+    border-radius: 0px 0px 20px 20px;
+    transition: 0.5s ease;
+}
+
+.nArticles article:hover
+{
+    background-color: #15151E;
+    color: white;
+    box-shadow: 0px 0px 10px #00000060;
+}
+
+.nArticles article:hover img
+{
+    transform: scale(1.3) rotate(5deg);
+}
+
+.newsHeader
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nMore > img
+{
+    width: 100%;
+}
+
+.nMore hr
+{
+    height: 2px;
+    width: 100%;
+    background-color: #38383F;
+    margin: 20px 0px;
+}
+
+.readMore
+{
+    color: #E10600;
+    text-decoration: none;
+}
+
+.nMore .container img
+{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.nMore .container h2
+{
+    margin-bottom: 10px;
+}
+
+.nMore .container
+{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.nMore > h2
+{
+    text-align: center;
+}
+
+form input[type = text], 
+form input[type = email], 
+form input[type = tel], 
+form select, 
+form textarea
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+form textarea
+{
+    height: 291px;
+    resize: none;
+}
+
+form select
+{
+    width: 100%;
+}
+
+form input[type = text], 
+form input[type = email], 
+form input[type = tel], 
+textarea
+{
+    width: calc(100% - 22px);
+}
+
+form
+{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form .container section
+{
+    width: calc(50% - 20px);
+    padding: 0px 10px 0px 10px;
+}
+
+form .btn
+{
+    margin-left: calc(50% - 57px);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 870px)
+{
+    .prPractice, .prRace
+    {
+        width: calc(50% - 40px);
+        margin-right: 40px;
+    }
+
+    .prTimes > .container .container
+    {
+        padding: 15px 40px;
+    }
+
+    .prAustin
+    {
+        display: block;
+    }
+
+    .raceNr, .car, .laps, .prPoints
+    {
+        display: revert;
+    }
+
+    .prCircuit, .prAustin, .prUitslag
+    {
+        padding: 50px 100px 0px 100px;
+    }
+
+    .nArticles
+    {
+        grid-template-columns: auto auto auto auto;
+        padding: 0px 50px;
+    }
+}
+
+@media only screen and (min-width: 1800px)
+{
+    .prDesc
+    {
+        display: block;
+    }
+
+    .prPractice, .prRace
+    {
+        width: calc(30% - 40px);
+        margin-right: 40px;
+    }
+
+    .nMore
+    {
+        display: block;
+    }
+
+    .nArticles
+    {
+        width: calc(80% - 100px);
+    }
+}
+
+@media only screen and (min-width: 1300px)
+{
+    .prStats
+    {
+        display: block;
+        
+    }
+
+    .prCircuit img
+    {
+        width: 50%;
+    }
 }
