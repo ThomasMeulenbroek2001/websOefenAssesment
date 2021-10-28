@@ -333,7 +333,6 @@ textarea
 form
 {
     width: 90%;
-    height: 70vh;
     margin: 0px auto 50px auto;
 }
 
@@ -388,6 +387,11 @@ form .btn
     {
         width: calc(50% - 20px);
         padding: 0px 10px 0px 10px;
+    }
+
+    form
+    {
+        height: 70vh;
     }
 }
 
