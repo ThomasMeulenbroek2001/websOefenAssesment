@@ -80,13 +80,15 @@ h1, h2
     margin-right: 10%;
 }
 
-.headerSection .btn
+.headerSection .btn, .prPractice .number, .prRace .number
 {
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 
-.headerSection .btn:last-child
+.headerSection .btn:last-child, .firstname, #constructors, 
+.newsItem:nth-child(3), .newsItem:nth-child(4), .prAustin, 
+.raceNr, .car, .laps, .prPoints
 {
     display: none;
 }
@@ -108,7 +110,7 @@ h1, h2
     animation: upDown 1s infinite;
 }
 
-#sec2
+#sec2, .prTimes, .tblResult > tbody tr:nth-child(odd)
 {
     background-color: #F3F3F3;
 }
@@ -119,14 +121,25 @@ h1, h2
     margin: 100px 20px;
 }
 
-.standing
+.standing, .prTimes > .container .container
 {
-    border-radius: 10px;
     background-color: white;
-    padding: 10px 20px;
+    border-radius: 10px;
     justify-content: space-between;
     margin-bottom: 2px;
+}
+
+.standing
+{
+    padding: 10px 20px;
     transition: 0.5s ease;
+}
+
+.prTimes > .container .container
+{
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 2px;
 }
 
 .standing:hover
@@ -135,7 +148,7 @@ h1, h2
     color: white;
 }
 
-.standing, .standing > section
+.standing, .standing > section, .statItem > .container
 {
     align-items: center;
 }
@@ -146,11 +159,6 @@ h1, h2
     font-weight: bold;
     font-size: 1.1em;
     margin-right: 20px;
-}
-
-.firstname
-{
-    display: none;
 }
 
 .lastname, .consturctor
@@ -174,15 +182,10 @@ h1, h2
     padding: 5px 10px;
 }
 
-#sec2 h2
+#sec2 h2, .prCircuit > h1, .prAustin h1, .prUitslag h1, .news h1
 {
     text-align: center;
     margin-bottom: 50px;
-}
-
-#constructors
-{
-    display: none;
 }
 
 .calendar
@@ -258,7 +261,8 @@ h1, h2
     margin-right: 20px;
 }
 
-.nextRace .practice, .nextRace .race
+.nextRace .practice, .nextRace .race, .prPractice, .prRace, 
+.prCircuit img, .nMore > img, form select, form .container section
 {
     width: 100%;
 }
@@ -275,7 +279,8 @@ h1, h2
     padding: 2px 6px;
 }
 
-.nextRace > .container .container
+.nextRace > .container .container, .prDesc p, .statItem > p, 
+.prAustin h2
 {
     margin-bottom: 20px;
 }
@@ -314,10 +319,10 @@ h1, h2
     justify-content: space-between;
 }
 
-.newsItem img
+.newsItem img, .nArticles section > img
 {
     width: 100%;
-    transition: 0.5s;
+    transition: 0.5s ease;
     display: block;
 }
 
@@ -327,22 +332,370 @@ h1, h2
     filter: brightness(80%);
 }
 
-.news h1
+.prTimes
 {
     text-align: center;
+    padding: 50px;
+}
+
+.prTimes img
+{
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.prTimes > h1, .prUitslag, .nArticles, .nMore
+{
     margin-bottom: 50px;
 }
 
-footer
+.prPractice .number, .prRace .number
+{
+    margin-bottom: 2px;
+}
+
+.prDate p:last-child
+{
+    padding: 8px 3px;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+}
+
+.prDesc
+{
+    width: 40%;
+    text-align: left;
+    display: none;
+}
+
+.prCircuit, .prUitslag
+{
+    padding: 50px 30px 0px 30px;
+}
+
+.prCircuit > .container
+{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prStats
+{
+    width: 30%;
+    display: none;
+}
+
+.prStats > .statItem
+{
+    width: calc(100% - 35px);
+}
+
+.statItem
+{
+    width: calc(50% - 35px);
+    margin: 0px 10px 10px 10px;
+    box-shadow: 0px 0px 6px #00000047;
+    padding: 25px 0px 25px 15px;
+}
+
+.statItem h2
+{
+    margin-right: 10px;
+}
+
+.prAustin .container section
+{
+    width: calc(50% - 45px);
+}
+
+.prAustin .container section:first-child
+{
+    margin-right: 90px;
+}
+
+.prAustin p
+{
+    margin-bottom: 30px;
+}
+
+.tblResult
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tblResult td
+{
+    padding: 15px 0px;
+}
+
+.tblResult th
+{
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.pos, .raceNr, .laps, .prPoints, .time
+{
+    width: 10%;
+}
+
+.driver, .car
+{
+    width: 25%;
+}
+
+.nArticles
+{
+    width: 100%;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+}
+
+.nArticles section
+{
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.nMore
+{
+    width: calc(20% - 42px);
+    padding: 0px 20px;
+    border-left: 2px solid #38383F;
+    display: none;
+}
+
+.nArticles p
+{
+    margin: 10px 20px 20px 20px;
+}
+
+.nArticles .btn
+{
+    display: inline-block;
+    margin-left: calc(50% - 57px);
+    margin-bottom: 20px;
+}
+
+.nArticles h2, .nMore > h2
+{
+    text-align: center;
+}
+
+.nArticles article
+{
+    border-radius: 0px 0px 20px 20px;
+    transition: 0.5s ease;
+}
+
+.nArticles article:hover
 {
     background-color: #15151E;
     color: white;
-    padding: 20px 0px 20px 50px;
+    box-shadow: 0px 0px 10px #00000060;
 }
 
-.newsItem:nth-child(3), .newsItem:nth-child(4)
+.nArticles article:hover img
 {
-    display: none;
+    transform: scale(1.3) rotate(5deg);
+}
+
+.newsHeader
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nMore hr
+{
+    height: 2px;
+    width: 100%;
+    background-color: #38383F;
+    margin: 20px 0px;
+}
+
+.readMore
+{
+    color: #E10600;
+    text-decoration: none;
+}
+
+.nMore .container img
+{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.nMore .container h2
+{
+    margin-bottom: 10px;
+}
+
+.nMore .container
+{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c5c5c5;
+}
+
+form input[type = text], 
+form input[type = email], 
+form input[type = tel], 
+form select, 
+form textarea
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+form textarea
+{
+    height: 291px;
+    resize: none;
+}
+
+form input[type = text], 
+form input[type = email], 
+form input[type = tel], 
+textarea
+{
+    width: calc(100% - 22px);
+}
+
+form
+{
+    width: 90%;
+    margin: 0px auto 50px auto;
+}
+
+form .btn
+{
+    margin-left: calc(50% - 57px);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Video embed bovenkant pagina */
+.video{
+    margin: 1%;
+    height: 630px;
+    width: 95.5%;
+}
+/* container links van de teams pagina */
+.left{
+    height: 100%;
+    width: 70%;
+    text-align: center;
+}
+
+/* container rechts van de teams pagina */
+.right{
+    margin-top: 1%;
+    width: 25%;
+    text-align: center;
+}
+/* containers van beide bestuurders */ 
+.max, .checo{
+    width: 50%;
+}
+
+/* dit stukje is van de naam en nummer van bestuurders met vlag */ 
+.driverTitle{
+    padding-left: 3%;
+    width: 97%;
+}
+.driverTitle h1{
+    color: red;
+}
+
+.driverTitle h2{
+    color: grey;
+}
+
+/* dit stukje gaat over het deel van de statistieken */
+.racingStats{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* dit zijn de fotos van max en checo */ 
+
+.max img, .checo img{
+    width: 95%;
+    opacity: 0.7;
+    filter:grayscale(100%);
+}
+
+/* dit gaat over de containers waar max en checo in staan */
+.driverLineup{
+    margin:1%;
+}
+
+/* dit schaalt de image zodat je niet de volledige image ziet*/ 
+.imgContainer{
+
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.vlagImg img{
+    width: 50px;
+    margin-left: 1vw;
+    margin-top: 0.5vh;
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+/* coureur statistieken tabel */
+.rbPage th{
+    color: #fcd700;
+    font-weight: bolder;
+}
+
+/* dit is de css voor de volledige pagina, hiermee is de achtergrond donkerblauw en de text wit */
+.rbPage{
+    background-color:#00162b;
+    color: white;
+    width: 100%;
+}
+
+/* dit zorgt er voor dat de motto niet zichtbaar is op PC */
+.motto{
+   display: none;
+}
+
+/* dit is voor de rechter kant waar er info is over redbull */
+.secondRb{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+/* stuk tekst over de coureurs */
+.driverBiography{
+    margin-top: 1vh;
+    width: 90%;
+}
+
+/* rechter kant padding toegevoegd waar info staat over redbull */
+.redbull{
+    padding-left: 10%;
+}
+
+/* animaties met hover */
+.imgContainer :hover{
+    transition-timing-function: ease;
+    transition-delay: 100ms;
+    opacity: 1;
+    animation: filters 2s 1;
 }
 
 /* animaties */
@@ -374,4 +727,15 @@ footer
       100% {
         transform: translateY(0px);
       }
+}
+
+@keyframes filters{
+    from{filter: grayscale(100%);}
+    to {filter:grayscale(0%) }
+    from{transform: rotateY(0deg);}
+    to {transform: rotateY(180deg);}
+    from{border: 1px solid;}
+    to{border:1px solid;}
+    from{border-color: red;}
+    to{border-color: white;}
 }

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 480px)
+@media only screen and (min-width: 500px)
 {
     #mobileNav
     {
@@ -36,23 +36,12 @@
         margin-left: 0px;
     }
 
-    #sec2 > section
-    {
-        width: calc(50% - 40px);
-        margin: 100px 20px;
-    }
-
     .team, .drivers
     {
         display: block;
     }
 
     .firstname
-    {
-        display: block;
-    }
-
-    #constructors
     {
         display: block;
     }
@@ -90,9 +79,66 @@
     }
 }
 
+@media only screen and (min-width: 870px)
+{
+    .prPractice, .prRace
+    {
+        width: calc(50% - 40px);
+        margin-right: 40px;
+    }
+
+    .prTimes > .container .container
+    {
+        padding: 15px 40px;
+    }
+
+    .prAustin
+    {
+        display: block;
+    }
+
+    .raceNr, .car, .laps, .prPoints
+    {
+        display: revert;
+    }
+
+    .prCircuit, .prAustin, .prUitslag
+    {
+        padding: 50px 100px 0px 100px;
+    }
+
+    .nArticles
+    {
+        grid-template-columns: auto auto auto auto;
+        padding: 0px 50px;
+    }
+
+    form .container section
+    {
+        width: calc(50% - 20px);
+        padding: 0px 10px 0px 10px;
+    }
+
+    form
+    {
+        height: 70vh;
+    }
+
+    #constructors
+    {
+        display: block;
+    }
+
+    #sec2 > section
+    {
+        width: calc(50% - 40px);
+        margin: 100px 20px;
+    }
+}
+
 @media only screen and (min-width: 1800px)
 {
-    .calendarItem
+    .calendarItem, .nMore, .prDesc
     {
         display: block;
     }
@@ -107,6 +153,17 @@
     {
         width: calc(50% - 10px);
     }
+
+    .prPractice, .prRace
+    {
+        width: calc(30% - 40px);
+        margin-right: 40px;
+    }
+
+    .nArticles
+    {
+        width: calc(80% - 100px);
+    }
 }
 
 @media only screen and (min-width: 660px)
@@ -120,6 +177,11 @@
     {
         margin-bottom: 0px;
     }
+
+    form
+    {
+        width: 50%;
+    }
 }
 
 @media only screen and (min-width: 1100px)
@@ -127,5 +189,74 @@
     .newsItem
     {
         width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1300px)
+{
+    .prStats
+    {
+        display: block;
+        
+    }
+
+    .prCircuit img
+    {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 660px)
+{
+    .left{
+        width: 100%;
+        display: block;
+    }
+    .right{
+        display: none;
+    }
+    .video{
+        display: none;
+    }
+    .max, .checo{
+        display: block;
+        width: 100%;
+    }
+    .max img, .checo img{
+        width: 100%;
+    
+    }
+    .motto{
+       margin: 10px;        
+    }
+    .driverBiography{
+        width: 80%;
+        padding: 10%;
+        text-align: center;
+    }
+
+}
+
+/* media queries voor team pagina tablet */
+@media only screen and (max-width: 1100px)
+{
+    .left{
+        width: 100%;
+    }
+    .right{
+        display: none;
+    }
+    .motto{
+        font-size: larger;
+        display: block;
+        text-align : center;
+    }
+    
+    .vlagImg img{
+        width: 50px;
+        margin-left: 1vw;
+        margin-top: 0.5vh;
+        opacity: 1;
+        filter: grayscale(0%);
     }
 }
